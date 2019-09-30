@@ -2,6 +2,6 @@
 
 @section('content')
 
-@include('widgets/card-pricing')
+@include('pricing/widgets/card-pricing')
 
 @endsection

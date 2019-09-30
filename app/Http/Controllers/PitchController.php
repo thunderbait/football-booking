@@ -9,9 +9,9 @@ class PitchController extends Controller
 {
     public function index()
     {
-        $pitches = Pitch::latest()->get();
+        $pitches = Pitch::all();
 
-        return response()->json($pitches);
+        return view('pitches/index', compact('pitches'));
     }
 
     public function store(PitchRequest $request)

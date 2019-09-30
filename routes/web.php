@@ -11,14 +11,20 @@
 |
 */
 
-//HomePage
+//ask nathan! does Partner need a controller/model or just view?
+// TO:DO 
+// make routes/filters for pitch browsing (city/type/size)
+// something similar to UNIQUE CONSTRAINT with timeslot and pitch to prevent double booking
+//
+
+//Navigation
 Route::get('/', function () {return view('index');});
 
-Route::get('/partners', 'PartnerController@index');
+Route::get('/partners', 'PartnerController@index'); 
 
-Route::get('/about', function () {return view('about');});
+Route::get('/about', function () {return view('about/index');});
 
-Route::get('/pricing', function () {return view('pricing');});
+Route::get('/pricing', function () {return view('pricing/index');});
 
 // Pitch Actions - CRUD
 

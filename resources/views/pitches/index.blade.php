@@ -2,7 +2,9 @@
 
 @section('content')
 
-	<div class="container">
+	<h1>hi</h1>
+
+	<!-- <div class="container">
 		<div class="row">
 			@foreach($pitches as $pitch)
 			<div class="col-4">
@@ -10,6 +12,6 @@
 			</div>
 			@endforeach
 		</div>
-	</div>
+	</div> -->
 
 @endsection	

@@ -17,7 +17,7 @@
 	
 	<!-- NavBar -->
 	<nav class="navbar navbar-expand-lg navbar-light bg-light">
-  		<a class="navbar-brand" href="#">Golazo</a><span class="sr-only">(current)</span>
+  		<a class="navbar-brand" href="/">Golazo - Book A Pitch</a><span class="sr-only">(current)</span>
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 		<span class="navbar-toggler-icon"></span>
 		</button>
@@ -35,7 +35,7 @@
 		        	<a class="dropdown-item" href="#">By Type</a>
 		        	<a class="dropdown-item" href="#">By Size</a>
 		        	<div class="dropdown-divider"></div>
-		        	<a class="dropdown-item" href="#">Browse All Pitches</a>
+		        	<a class="dropdown-item" href="/pitches">Browse All Pitches</a>
 		        </div>
 
 		      </li>
@@ -45,11 +45,11 @@
 		      </li>
 
 		      <li class="nav-item">
-		        <a class="nav-link" href="/about">About Us</a>
+		        <a class="nav-link" href="/pricing">Pricing</a>
 		      </li>
 
 		      <li class="nav-item">
-		      	<a class="nav-link" href="/pricing">Pricing</a>
+		      	<a class="nav-link" href="/about">About Us</a>
 		      </li>
 
 		    </ul>
