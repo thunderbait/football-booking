@@ -12,9 +12,9 @@
 */
 
 //HomePage
-Route::get('/index', function () {return view('index');});
+Route::get('/', function () {return view('index');});
 
-Route::get('/partners', function () {return view('partners');});
+Route::get('/partners', 'PartnerController@index');
 
 Route::get('/about', function () {return view('about');});
 
