@@ -10,7 +10,7 @@ class PartnerController extends Controller
     public function index()
     {
         $partners = Partner::all();
-        return view('partners', compact('partners'));
+        return view('partners/index', compact('partners'));
     }
 
     public function store(PartnerRequest $request)

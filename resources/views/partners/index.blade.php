@@ -6,10 +6,10 @@
 		<div class="row">
 			@foreach($partners as $partner)
 			<div class="col-4">
-				@include('widgets/master-widgets/partners-cards')
+				@include('widgets/partners-cards')
 			</div>
 			@endforeach
 		</div>
 	</div>
 
-@endsection	
+@endsection
