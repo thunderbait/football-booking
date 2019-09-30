@@ -13,7 +13,10 @@ use Illuminate\Http\Request;
 |
 */
 
-Route::middleware('auth:api')->get('/user', function (Request $request) {
-    return $request->user();
-});
-Route::resource('houses', 'HouseController');Route::resource('pitches', 'PitchController');Route::resource('pitches', 'PitchController');Route::resource('timeslots', 'TimeslotController');Route::resource('reservations', 'ReservationController');
+Route::middleware('auth:api')->get('/user', function (Request $request) {return $request->user();});
+
+Route::resource('pitches', 'PitchController');
+
+Route::resource('timeslots', 'TimeslotController');
+
+Route::resource('reservations', 'ReservationController');

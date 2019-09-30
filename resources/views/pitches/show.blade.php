@@ -6,7 +6,7 @@
 		<div class="row">
 			@foreach($cities as $city)
 			<div class="col-4">
-				@include('pitches/widgets/city-cards')
+				@include('widgets/pitch-widgets/city-cards')
 			</div>
 			@endforeach
 		</div>
