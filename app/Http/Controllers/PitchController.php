@@ -61,4 +61,11 @@ class PitchController extends Controller
 
         file_put_contents(app_path("/Http/Controllers/{$name}Controller.php"), $controllerTemplate);
     }
+
+    public function getPitch()
+    {
+        $pitches = Pitch::all();
+
+        return view('pitches/index', compact('pitches'));
+    }
 }

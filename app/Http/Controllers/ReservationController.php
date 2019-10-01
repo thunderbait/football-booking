@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use App\Http\Requests\ReservationRequest;
 use App\Reservation;
 
+// https://restfulapi.net/http-status-codes/
+
 class ReservationController extends Controller
 {
     public function index()

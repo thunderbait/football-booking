@@ -19,4 +19,6 @@ Route::resource('pitches', 'PitchController');
 
 Route::resource('timeslots', 'TimeslotController');
 
-Route::resource('reservations', 'ReservationController');Route::resource('partners', 'PartnerController');Route::resource('referees', 'RefereeController');
+Route::resource('reservations', 'ReservationController');
+
+Route::resource('partners', 'PartnerController');
