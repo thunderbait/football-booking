@@ -2,45 +2,86 @@
 
 namespace App\Http\Controllers;
 
+use Illuminate\Http\Request;
 use App\Http\Requests\PitchRequest;
 use App\Pitch;
 
 class PitchController extends Controller
 {
-    public function index()
+    public function index(Request $request)
     {
+        
         $pitches = Pitch::all();
+
+        //  
 
         return view('pitches/index', compact('pitches'));
     }
 
-    public function store(PitchRequest $request)
+    public function create(PitchRequest $request)
     {
-        $pitch = Pitch::create($request->all());
+        $pitch = Pitch::all();
 
-        return response()->json($pitch, 201);
+        return view('pitches.create');
+    }
+    
+    public function store(Request $request)
+    {
+        $request->validate([
+            'name'=>'required',
+            'location'=> 'required',
+            'size' => 'required',
+            'type' => 'required'
+        ]);
+        $pitch = new Pitch([
+            'name' => $request->get('name'),
+            'location'=> $request->get('location'),
+            'size'=> $request->get('size'),
+            'type'=> $request->get('type')
+        ]);
+
+        $pitch->save();
+
+        return redirect('/pitches')->with('success', 'Pitch has been added');
     }
 
     public function show($id)
     {
-        $pitch = Pitch::findOrFail($id);
-
-        return response()->json($pitch);
+       //
     }
 
-    public function update(PitchRequest $request, $id)
+    public function edit($id)
     {
-        $pitch = Pitch::findOrFail($id);
-        $pitch->update($request->all());
+        $pitch = Pitch::find($id);
 
-        return response()->json($pitch, 200);
+        return view('pitches.edit', compact('pitch'));
+    }
+
+    public function update(Request $request, $id)
+    {
+          $request->validate([
+            'name'=>'required',
+            'location'=> 'required',
+            'size' => 'required',
+            'type' => 'required'
+          ]);
+
+          $pitch = Pitch::find($id);
+          $pitch->name = $request->get('name');
+          $pitch->location = $request->get('location');
+          $pitch->size = $request->get('size');
+          $pitch->type = $request->get('type');
+          $pitch->save();
+
+          return redirect('/pitches')->with('success', 'Pitch has been updated');
     }
 
     public function destroy($id)
     {
-        Pitch::destroy($id);
+         $pitch = Pitch::find($id);
+         $pitch->delete();
 
-        return response()->json(null, 204);
+         return redirect('/pitches')->with('success', 'Pitch has been deleted Successfully');
     }
 
     protected function controller($name)
@@ -62,10 +103,13 @@ class PitchController extends Controller
         file_put_contents(app_path("/Http/Controllers/{$name}Controller.php"), $controllerTemplate);
     }
 
-    public function getPitch()
+    public function showCities()
     {
-        $pitches = Pitch::all();
+        $city = 'Nicosia'; //$city = $request->input('city');
+        $pitches = Pitch::where('location', $city)->get();
 
         return view('pitches/index', compact('pitches'));
+
     }
+
 }

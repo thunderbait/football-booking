@@ -13,7 +13,7 @@
 	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
 </head>
-<body style="background: url('https://wallpaperplay.com/walls/full/3/7/7/284990.jpg') no-repeat center center fixed; -webkit-background-size: cover; -moz-background-size: cover; background-size: cover; -o-background-size: cover;">
+<body style="background: url('#') no-repeat center center fixed; -webkit-background-size: cover; -moz-background-size: cover; background-size: cover; -o-background-size: cover;">
 	
 	<!-- NavBar -->
 	<nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -31,7 +31,7 @@
 		        </a>
 
 		        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-		        	<a class="dropdown-item" href="#">By City</a>
+		        	<a class="dropdown-item" href="{{ route('cities' )}}">By City</a>
 		        	<a class="dropdown-item" href="#">By Type</a>
 		        	<a class="dropdown-item" href="#">By Size</a>
 		        	<div class="dropdown-divider"></div>
