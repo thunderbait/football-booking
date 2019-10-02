@@ -63,7 +63,7 @@ class TimeslotController extends Controller
         $timeslot->end_time = $request->get('end_time');
         $timeslot->save();
 
-        return redirect('/timeslots')->with('success', 'Timeslot has been edited!')
+        return redirect('/timeslots')->with('success', 'Timeslot has been edited!');
     }
 
     public function destroy($id)

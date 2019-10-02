@@ -45,7 +45,9 @@ class PitchController extends Controller
 
     public function show($id)
     {
-       //
+        $pitches = Pitch::all();
+
+        return view('pitches/show', compact('pitches'));
     }
 
     public function edit($id)

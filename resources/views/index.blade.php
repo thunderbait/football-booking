@@ -2,6 +2,14 @@
 
 @section('content')
 
-@include('widgets/master-widgets/contact-us')
+@include('widgets/carousel')
+
+<p>
+@include('widgets/services')
+</p>
+
+<p>
+@include('widgets/contact-us')
+</p>
 
 @endsection

@@ -26,4 +26,8 @@ Route::resource('timeslots', 'TimeslotController'); //CRUD for Timeslots
 
 Route::resource('partners', 'PartnerController'); // CRUD for Partners
 
-Route::get('cities', 'PitchController@showCities')->name('cities');
+Route::resource('reservations', 'ReservationController'); // CRUD for Reservations
+
+Route::get('cities', 'PitchController@showCities')->name('cities'); // Browse Cities
+
+Route::get('pitches/show', 'PitchController@show'); //Show all pitches

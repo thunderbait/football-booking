@@ -11,12 +11,13 @@
 	<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
 	<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
 	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	
 
 </head>
 <body style="background: url('#') no-repeat center center fixed; -webkit-background-size: cover; -moz-background-size: cover; background-size: cover; -o-background-size: cover;">
 	
 	<!-- NavBar -->
-	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+	<nav class="navbar navbar-expand-lg navbar-light bg-light navbar-fixed-top">
   		<a class="navbar-brand" href="/">Golazo - Book A Pitch</a><span class="sr-only">(current)</span>
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 		<span class="navbar-toggler-icon"></span>
@@ -35,7 +36,7 @@
 		        	<a class="dropdown-item" href="#">By Type</a>
 		        	<a class="dropdown-item" href="#">By Size</a>
 		        	<div class="dropdown-divider"></div>
-		        	<a class="dropdown-item" href="/pitches">Browse All Pitches</a>
+		        	<a class="dropdown-item" href="/pitches/show">Browse All Pitches</a>
 		        </div>
 
 		      </li>
