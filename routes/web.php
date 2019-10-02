@@ -31,3 +31,5 @@ Route::resource('reservations', 'ReservationController'); // CRUD for Reservatio
 Route::get('cities', 'PitchController@showCities')->name('cities'); // Browse Cities
 
 Route::get('pitches/show', 'PitchController@show'); //Show all pitches
+
+Route::get('/pricing', function () { return view('pricing/index');});

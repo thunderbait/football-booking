@@ -6,9 +6,9 @@
   <li data-target="#myCarousel" data-slide-to="2" class=""></li>
 </ol>
 
-<div class="carousel-inner">
+<div class="carousel-inner" style=" width:100%; height: 500px !important;">
   <div class="carousel-item">
-    <img class="first-slide" src="http://via.placeholder.com/2000x600" alt="First slide">
+    <img class="first-slide" src="img/UEFA.jpg" alt="First slide">
       <div class="container">
         
         <div class="carousel-caption">
@@ -20,7 +20,7 @@
   </div>
 
   <div class="carousel-item active">
-    <img class="second-slide" src="http://via.placeholder.com/2000x600" alt="Second slide">
+    <img class="second-slide" src="img/rapinoe-celebration.jpg" alt="Second slide">
       <div class="container">
 
         <div class="carousel-caption">

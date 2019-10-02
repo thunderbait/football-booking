@@ -17,7 +17,7 @@
 <body style="background: url('#') no-repeat center center fixed; -webkit-background-size: cover; -moz-background-size: cover; background-size: cover; -o-background-size: cover;">
 	
 	<!-- NavBar -->
-	<nav class="navbar navbar-expand-lg navbar-light bg-light navbar-fixed-top">
+	<nav class="navbar navbar-expand-lg navbar-light navbar-fixed-top" style="background-color: #4a9ff5">
   		<a class="navbar-brand" href="/">Golazo - Book A Pitch</a><span class="sr-only">(current)</span>
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 		<span class="navbar-toggler-icon"></span>
@@ -54,16 +54,29 @@
 		      </li>
 
 		    </ul>
-			    <form class="form-inline my-2 my-lg-0">
-			      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-			      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-			    </form>
+			    
 		  </div>
 	</nav>
 	
 	<p>
 		@yield('content')
 	</p>
+
+	<style>
+	.footer {
+	  position: fixed;
+	  left: 0;
+	  bottom: 0;
+	  width: 100%;
+	  background: white;
+	  text-align: center;
+	}
+	</style>	
+
+	<footer class="footer">
+        <p class="float-left" style="margin-left: 25px"><a href="#"> Back to top</a></p>
+        <p>&copy; Sotos &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+     </footer>
 
 	<!-- Scripts -->
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
