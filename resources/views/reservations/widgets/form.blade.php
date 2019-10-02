@@ -1,19 +1,19 @@
-<form>
-  <div class="form-group">
-    <h2>Pitch Booking - {{$pitch->name}}</h2>
-    <h2>Size : {{$pitch->size}}</h2>
-    <h2>LOcation : {{$pitch->location}}</h2>
-    <h2>Type: {{$pitch->type}}</h2>
-  </div>
-  <div class="form-group">
-    <label for="exampleInputEmail1">Email address</label>
-    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-  </div>
-  <div class="form-check">
-    <input type="checkbox" class="form-check-input" id="exampleCheck1">
-    <label class="form-check-label" for="exampleCheck1">Agree to the Terms & Conditions</label>
-  </div>
-  <button type="submit" class="btn btn-primary">Pay Now</button>  <!-- paid for = 1 -->
-  <button type="submit" class="btn btn-primary">Pay Later</button> <!-- Paid for = 0 -->
-</form>
+<div class="container" style="text-align: center;">
+	<h2>Full Name</h2>
+	<form>
+		<div class="row">
+			<div class="col-6 col-sm-6 col-md-6 col-xl-6">
+			  <div class="form-group">
+			    <label for="name">Name</label>
+			    <input type="text" class="form-control" id="name" placeholder="Enter name">
+			  </div>
+			</div>
+			<div class="col-6 col-sm-6 col-md-6 col-xl-6">
+			  <div class="form-group">
+			    <label for="surname">Surame</label>
+			    <input type="text" class="form-control" id="surname" placeholder="Enter surname">
+			  </div>
+			</div>
+		</div>
+	</form>
+</div>
