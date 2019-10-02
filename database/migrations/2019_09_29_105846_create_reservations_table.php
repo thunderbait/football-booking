@@ -18,6 +18,7 @@ class CreateReservationsTable extends Migration
             $table->string('pitch_id');
             $table->string('user_id');
             $table->string('timeslot_id');
+            $table->string('date');
             $table->string('paid_for');
             $table->timestamps();
         });
