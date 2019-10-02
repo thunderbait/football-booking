@@ -3,44 +3,75 @@
 namespace App\Http\Controllers;
 
 use App\Http\Requests\TimeslotRequest;
+use Illuminate\Http\Request;
 use App\Timeslot;
 
 class TimeslotController extends Controller
 {
     public function index()
     {
-        $timeslots = Timeslot::latest()->get();
+        $timeslots = Timeslot::all();
 
-        return response()->json($timeslots);
+        return view('timeslots/index', compact('timeslots'));
+    }
+
+    public function create(TimeslotRequest $request)
+    {
+        $timeslots = Timeslot::all();
+
+        return view('pitches.create');
     }
 
     public function store(TimeslotRequest $request)
     {
-        $timeslot = Timeslot::create($request->all());
+        $request->validate([
+            'start_time'=>'required',
+            'end_time'=>'required'
+        ]);
 
-        return response()->json($timeslot, 201);
+        $timeslot = new Timeslot([
+            'start_time'=> $request->get('start_time'),
+            'end_time'=> $request->get('end_time')
+        ]);
+
+        $pitch->save();
+
+        return redirect('/timeslots')->with('success', 'Timeslot has been added!');
     }
 
     public function show($id)
     {
-        $timeslot = Timeslot::findOrFail($id);
+        //
+    }
 
-        return response()->json($timeslot);
+    public function edit($id)
+    {
+        $timeslot = Timeslot::find($id);
+
+        return view('timeslots.edit', compact('timeslots'));
     }
 
     public function update(TimeslotRequest $request, $id)
     {
-        $timeslot = Timeslot::findOrFail($id);
-        $timeslot->update($request->all());
+        $request->validate([
+            'start_time'=>'required',
+            'end_time'=>'required'
+        ]);
 
-        return response()->json($timeslot, 200);
+        $timeslot = Timeslot::find($id);
+        $timeslot->start_time = $request->get('start_time');
+        $timeslot->end_time = $request->get('end_time');
+        $timeslot->save();
+
+        return redirect('/timeslots')->with('success', 'Timeslot has been edited!')
     }
 
     public function destroy($id)
     {
-        Timeslot::destroy($id);
+        $timeslot = Timeslot::find($id);
+        $timeslot->delete();
 
-        return response()->json(null, 204);
+        return redirect('/timeslots')->with('success', 'Timeslot has been deleted!');
     }
 
     protected function controller($name)

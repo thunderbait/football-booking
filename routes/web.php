@@ -20,6 +20,10 @@ Route::get('/', function () {
     return view('index');
 });
 
-Route::resource('pitches', 'PitchController');
+Route::resource('pitches', 'PitchController'); //CRUD for Pitches
+
+Route::resource('timeslots', 'TimeslotController'); //CRUD for Timeslots
+
+Route::resource('partners', 'PartnerController'); // CRUD for Partners
 
 Route::get('cities', 'PitchController@showCities')->name('cities');

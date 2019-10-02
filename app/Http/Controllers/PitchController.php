@@ -13,8 +13,6 @@ class PitchController extends Controller
         
         $pitches = Pitch::all();
 
-        //  
-
         return view('pitches/index', compact('pitches'));
     }
 
