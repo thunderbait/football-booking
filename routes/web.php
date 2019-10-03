@@ -28,8 +28,14 @@ Route::resource('partners', 'PartnerController'); // CRUD for Partners
 
 Route::resource('reservations', 'ReservationController'); // CRUD for Reservations
 
-Route::get('cities', 'PitchController@showCities')->name('cities'); // Browse Cities
+Route::get('cities/{city}', 'PitchController@showCities')->name('cities'); // Browse Cities
+
+Route::get('sizes/{size}', 'PitchController@showSize')->name('sizes'); // Browse Sizes
+
+Route::get('type/{type}', 'PitchController@showTypes')->name('types'); // Browse Types
 
 Route::get('pitches/show', 'PitchController@show'); //Show all pitches
 
 Route::get('/pricing', function () { return view('pricing/index');});
+
+Route::get('/about', function () { return view('about/index');});

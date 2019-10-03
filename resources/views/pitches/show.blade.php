@@ -2,6 +2,8 @@
 
 @section('content')
 
+	<h1 class="display-2" style="text-align: center; margin-left: 25px">Pitches Browser</h1>
+
 	<div class="container">
 		<div class="row">
 			@foreach($pitches as $pitch)	

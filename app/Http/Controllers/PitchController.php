@@ -103,13 +103,25 @@ class PitchController extends Controller
         file_put_contents(app_path("/Http/Controllers/{$name}Controller.php"), $controllerTemplate);
     }
 
-    public function showCities(Request $request)
+    public function showCities(Request $request, $city)
     {
-        $city = $request->input('city');
         $pitches = Pitch::where('location', $city)->get();
 
-        return view('cities/index', compact('pitches'));
+        return view('pitches.show', compact('pitches'));
     }
 
+    public function showSize(Request $request, $size)
+    {
+        $pitches = Pitch::where('size', $size)->get();
+
+        return view('pitches.show', compact('pitches'));
+    }
+
+    public function showTypes(Request $request, $type)
+    {
+        $pitches = Pitch::where('type', $type)->get();
+
+        return view('pitches.show', compact('pitches'));
+    }
 
 }

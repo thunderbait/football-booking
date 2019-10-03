@@ -13,7 +13,7 @@
                     <li>Goalkeeper Gloves</li>
                     <li>Free cancelation</li>
                 </ul>
-                <a href="#" target="_blank" class="btn btn-primary mb-3">Book Now</a>
+                <a href="/sizes/5x5" target="_blank" class="btn btn-primary mb-3">Book Now</a>
             </div>
         </div>
 
@@ -30,7 +30,7 @@
                     <li>Goalkeeper Gloves</li>
                     <li>Free cancelation</li>
                 </ul>
-                <a href="#" target="_blank" class="btn btn-primary mb-3">Book Now</a>
+                <a href="/sizes/7x7" target="_blank" class="btn btn-primary mb-3">Book Now</a>
             </div>
         </div>
 
@@ -47,7 +47,7 @@
                     <li>Goalkeeper Gloves</li>
                     <li>Free cancelation</li>
                 </ul>
-                <a href="#" target="_blank" class="btn btn-primary mb-3">Book Now</a>
+                <a href="/sizes/8x8" target="_blank" class="btn btn-primary mb-3">Book Now</a>
             </div>
         </div>
     </div>

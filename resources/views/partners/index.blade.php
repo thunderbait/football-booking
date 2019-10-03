@@ -2,7 +2,7 @@
 
 @section('content')
 
-	<h1 style="margin-left: 35px">Our Partners</h1>
+	<h1 class="display-2" style="text-align: center; margin-left: 25px">Our Partners</h1>
 
 	<div class="container">
 		<div class="row">

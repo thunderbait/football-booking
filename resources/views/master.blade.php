@@ -32,11 +32,11 @@
 		        </a>
 
 		        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-		        	<a class="dropdown-item" href="#">Nicosia</a>
-		        	<a class="dropdown-item" href="#">Paphos</a>
-		        	<a class="dropdown-item" href="#">Larnaca</a>
-		        	<a class="dropdown-item" href="#">Limassol</a>
-		        	<a class="dropdown-item" href="#">Famagusta</a>
+		        	<a class="dropdown-item" href="{{url('/cities/Nicosia')}}">Nicosia</a>
+		        	<a class="dropdown-item" href="/cities/Paphos">Paphos</a>
+		        	<a class="dropdown-item" href="/cities/Larnaca">Larnaca</a>
+		        	<a class="dropdown-item" href="/cities/Limassol">Limassol</a>
+		        	<a class="dropdown-item" href="/cities/Famagusta">Famagusta</a>
 		        	<div class="dropdown-divider"></div>
 		        	<a class="dropdown-item" href="/pitches/show">Browse All Cities</a>
 		        </div>
@@ -48,9 +48,9 @@
 		          Browse By Size
 		        </a>
 			        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-			        	<a class="dropdown-item" href="#">5x5</a>
-			        	<a class="dropdown-item" href="#">7x7</a>
-			        	<a class="dropdown-item" href="#">11x11</a>
+			        	<a class="dropdown-item" href="/sizes/5x5">5x5</a>
+			        	<a class="dropdown-item" href="/sizes/7x7">7x7</a>
+			        	<a class="dropdown-item" href="/sizes/11x11">11x11</a>
 			        	<div class="dropdown-divider"></div>
 			        	<a class="dropdown-item" href="/pitches/show">Browse All Sizes</a>
 			        </div>
@@ -61,9 +61,9 @@
 		          Browse By Type
 		        </a>
 		        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-		        	<a class="dropdown-item" href="#">Grass</a>
-		        	<a class="dropdown-item" href="#">Astro</a>
-		        	<a class="dropdown-item" href="#">3G</a>
+		        	<a class="dropdown-item" href="/type/grass">Grass</a>
+		        	<a class="dropdown-item" href="/type/astro">Astro</a>
+		        	<a class="dropdown-item" href="/type/3g">3G</a>
 		        	<div class="dropdown-divider"></div>
 		        	<a class="dropdown-item" href="/pitches/show">Browse All Types</a>
 		        </div>
