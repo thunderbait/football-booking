@@ -8,7 +8,7 @@
 
   <div class="carousel-inner" style=" width:100%; height: 100% !important;">
     <div class="carousel-item">
-      <img class="first-slide" src="img/maxhtec.jpg" alt="First slide" style=" width:100%; height: 600px !important;">
+      <img class="first-slide" src="https://www.telegraph.co.uk/content/dam/world-cup/2018/07/17/TELEMMGLPICT000166493388_trans%2B%2B_015gmpDOnvmuD2JZwtarokvwJ_pM0e3Vi_0UFZUXhc.jpeg" alt="First slide" style=" width:100%; height: 600px !important;">
         <div class="container">
           
           <div class="carousel-caption">
@@ -32,7 +32,7 @@
     </div>
 
     <div class="carousel-item">
-      <img class="third-slide" src="img/rapinoe-celebration.jpg" alt="Third slide" style=" width:100%; height: 600px !important;">
+      <img class="third-slide" src="https://onlybyland.com/wp-content/uploads/2019/04/oldtraffordfeature.jpg" alt="Third slide" style=" width:100%; height: 600px !important;">
         <div class="container">
           
           <div class="carousel-caption">

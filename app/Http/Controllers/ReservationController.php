@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Http\Requests\ReservationRequest;
 use App\Reservation;
 use Illuminate\Http\Request;
+use App\Timeslot;
 
 // https://restfulapi.net/http-status-codes/
 
@@ -13,6 +14,8 @@ class ReservationController extends Controller
     public function index()
     {
         $reservations = Reservation::all();
+
+        $timeslot = Timeslot::find('start_time');
 
         return view('reservations.index', compact('reservations'));
     }
@@ -90,6 +93,8 @@ class ReservationController extends Controller
 
         return redirect('/reservation')->with('success', 'Reservation has been deleted Successfully');
     }
+
+
 
     protected function controller($name)
     {

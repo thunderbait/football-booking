@@ -15,7 +15,7 @@
   <table class="table table-striped">
     <thead>
         <tr>
-          <td>ID</td>
+          <td>Reservation ID</td>
           <td>Start Time</td>
           <td>End Time</td>
           <td colspan="2">Action</td>
