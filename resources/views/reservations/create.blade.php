@@ -8,7 +8,7 @@
 </style>
 <div class="card uper">
   <div class="card-header">
-    Add Timeslot
+    Create a booking for pitch with ID
   </div>
   <div class="card-body">
     @if ($errors->any())
@@ -39,7 +39,7 @@
               <input type="date" class="form-control" name="date"/>
           </div>
           <div class="form-group">
-              <label for="paid_for">Paid For :</label>
+              <label for="paid_for">Pay Now? :</label>
               <input type="text" class="form-control" name="paid_for"/>
           </div>
           <button type="submit" class="btn btn-primary">Add</button>

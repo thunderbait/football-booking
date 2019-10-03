@@ -50,7 +50,7 @@
                         <span class="mbr-iconfont fa-trophy fa"></span>
                     </div>
                     <div class="text-wrap vcenter">
-                        <h2 class="mbr-fonts-style mbr-bold mbr-section-title3 display-5">Host <span>your own tournament</span></h2>
+                        <h2 class="mbr-fonts-style mbr-bold mbr-section-title3 display-5">Host <span>your own tournament (TBC)</span></h2>
                         <p class="mbr-fonts-style text1 mbr-text display-6">Through our platform, set-up and run your own football tournament in any pitch you want.</p>
                     </div>
                 </div>

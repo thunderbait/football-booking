@@ -42,5 +42,6 @@
         @endforeach
     </tbody>
   </table>
+  <a href="{{ route('reservations.create')}}" class="btn btn-success" style="margin-left: 25px">New</a></td>
 <div>
 @endsection

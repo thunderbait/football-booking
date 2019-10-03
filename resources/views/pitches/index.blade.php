@@ -43,5 +43,6 @@
         @endforeach
     </tbody>
   </table>
+  <a href="{{ route('pitches.create')}}" class="btn btn-success" style="margin-left: 25px">New</a></td>
 <div>
 @endsection

@@ -28,17 +28,45 @@
 		      <li class="nav-item dropdown">
 
 		        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-		          Browse
+		          Browse By City
 		        </a>
 
 		        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-		        	<a class="dropdown-item" href="{{ route('cities' )}}">By City</a>
-		        	<a class="dropdown-item" href="#">By Type</a>
-		        	<a class="dropdown-item" href="#">By Size</a>
+		        	<a class="dropdown-item" href="#">Nicosia</a>
+		        	<a class="dropdown-item" href="#">Paphos</a>
+		        	<a class="dropdown-item" href="#">Larnaca</a>
+		        	<a class="dropdown-item" href="#">Limassol</a>
+		        	<a class="dropdown-item" href="#">Famagusta</a>
 		        	<div class="dropdown-divider"></div>
-		        	<a class="dropdown-item" href="/pitches/show">Browse All Pitches</a>
+		        	<a class="dropdown-item" href="/pitches/show">Browse All Cities</a>
 		        </div>
 
+		      </li>
+
+		      <li class="nav-item dropdown">
+		        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+		          Browse By Size
+		        </a>
+			        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+			        	<a class="dropdown-item" href="#">5x5</a>
+			        	<a class="dropdown-item" href="#">7x7</a>
+			        	<a class="dropdown-item" href="#">11x11</a>
+			        	<div class="dropdown-divider"></div>
+			        	<a class="dropdown-item" href="/pitches/show">Browse All Sizes</a>
+			        </div>
+		      </li>
+
+		      <li class="nav-item dropdown">
+		        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+		          Browse By Type
+		        </a>
+		        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+		        	<a class="dropdown-item" href="#">Grass</a>
+		        	<a class="dropdown-item" href="#">Astro</a>
+		        	<a class="dropdown-item" href="#">3G</a>
+		        	<div class="dropdown-divider"></div>
+		        	<a class="dropdown-item" href="/pitches/show">Browse All Types</a>
+		        </div>
 		      </li>
 
 		      <li class="nav-item">
@@ -73,10 +101,10 @@
 	}
 	</style>	
 
-	<footer class="footer">
+<!-- 	<footer class="footer">
         <p class="float-left" style="margin-left: 25px"><a href="#"> Back to top</a></p>
         <p>&copy; Sotos &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
-     </footer>
+     </footer> -->
 
 	<!-- Scripts -->
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

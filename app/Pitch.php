@@ -9,3 +9,4 @@ class Pitch extends Model
     protected $guarded = ['id'];
 
 }
+

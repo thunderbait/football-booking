@@ -13,7 +13,7 @@ class PitchController extends Controller
         
         $pitches = Pitch::all();
 
-        return view('pitches/index', compact('pitches'));
+        return view('pitches.index', compact('pitches'));
     }
 
     public function create(PitchRequest $request)
@@ -103,13 +103,13 @@ class PitchController extends Controller
         file_put_contents(app_path("/Http/Controllers/{$name}Controller.php"), $controllerTemplate);
     }
 
-    public function showCities()
+    public function showCities(Request $request)
     {
-        $city = 'Nicosia'; //$city = $request->input('city');
+        $city = $request->input('city');
         $pitches = Pitch::where('location', $city)->get();
 
-        return view('pitches/index', compact('pitches'));
-
+        return view('cities/index', compact('pitches'));
     }
+
 
 }

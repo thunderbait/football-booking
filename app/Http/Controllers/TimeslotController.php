@@ -19,7 +19,7 @@ class TimeslotController extends Controller
     {
         $timeslots = Timeslot::all();
 
-        return view('pitches.create');
+        return view('timeslots.create');
     }
 
     public function store(TimeslotRequest $request)
@@ -34,7 +34,7 @@ class TimeslotController extends Controller
             'end_time'=> $request->get('end_time')
         ]);
 
-        $pitch->save();
+        $timeslot->save();
 
         return redirect('/timeslots')->with('success', 'Timeslot has been added!');
     }
@@ -48,7 +48,7 @@ class TimeslotController extends Controller
     {
         $timeslot = Timeslot::find($id);
 
-        return view('timeslots.edit', compact('timeslots'));
+        return view('timeslots.edit', compact('timeslot'));
     }
 
     public function update(TimeslotRequest $request, $id)

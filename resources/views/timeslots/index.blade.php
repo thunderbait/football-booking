@@ -1,11 +1,13 @@
 @extends('master')
 
 @section('content')
+
 <style>
   .uper {
     margin-top: 40px;
   }
 </style>
+
 <div class="uper">
   @if(session()->get('success'))
     <div class="alert alert-success">
@@ -39,5 +41,6 @@
         @endforeach
     </tbody>
   </table>
+  <a href="{{ route('timeslots.create')}}" class="btn btn-success" style="margin-left: 25px">New</a></td>
 <div>
 @endsection
