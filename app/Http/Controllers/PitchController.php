@@ -10,8 +10,11 @@ class PitchController extends Controller
 {
     public function index(Request $request)
     {
+        clock()->startEvent('call-call',"DB load");
         
         $pitches = Pitch::all();
+
+        clock()->endEvent('call-call');
 
         return view('pitches.index', compact('pitches'));
     }
